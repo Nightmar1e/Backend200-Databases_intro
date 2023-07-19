@@ -81,7 +81,7 @@ JOINS\
 \fs26 \cf0 \cb1 \kerning1\expnd0\expndtw0 15.   SELECT first_name, last_name, department_id, depart_name\
 	FROM employees\
 	JOIN departments USING (department_id);\
-16.   SELECT job_title, first_name, salary-min_salary 'Salary - Min_Salary'\
+16.   SELECT job_title, first_name, salary-min_salary as 'Salary - Min_Salary'\
 	FROM employees\
 	NATURAL JOIN jobs;\
 \
